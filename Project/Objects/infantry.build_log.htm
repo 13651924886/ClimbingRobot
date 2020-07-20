@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 111, 111, LIC=GE7DL-0Z9DD-ZEJH2-9G717-TH5EM-IU89K
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.27.1.0
+Toolchain Path:  D:\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.31.17.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\admin\Desktop\SUES_HEROv3.0\Project\standard.uvprojx
+Project File Date:  06/17/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\MDK\ARM\ARMCC\Bin'
+Build target 'standard'
+compiling shoot.c...
+..\User\APP\Gimbal_Task\gimbal_behaviour.h(14): warning:  #9-D: nested comment is not allowed
+  /************************* 头文件 ******************************/
+..\user\APP\shoot\shoot.c(151): warning:  #940-D: missing return statement at end of non-void function "shoot_control_loop" 
+  }
+..\user\APP\shoot\shoot.c(75): warning:  #177-D: function "shoot_bullet_control"  was declared but never referenced
+  static void shoot_bullet_control(void);
+..\user\APP\shoot\shoot.c(77): warning:  #177-D: function "shoot_done_control"  was declared but never referenced
+  static void shoot_done_control(void);
+..\user\APP\shoot\shoot.c(79): warning:  #177-D: function "shoot_ready_control"  was declared but never referenced
+  static void shoot_ready_control(void);
+..\user\APP\shoot\shoot.c: 5 warnings, 0 errors
+compiling main.c...
+..\user\APP\LX_IMU\LX_IMU.h(156): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\main.c: 1 warning, 0 errors
+compiling gimbal_task.c...
+..\user\APP\gimbal_task\gimbal_behaviour.h(14): warning:  #9-D: nested comment is not allowed
+  /************************* 头文件 ******************************/
+..\user\APP\LX_IMU\LX_IMU.h(156): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user\APP\gimbal_task\gimbal_task.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=29232 RO-data=3376 RW-data=300 ZI-data=7564  
+FromELF: creating hex file...
+".\Objects\infantry.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+   * Component: DSP Variant: Library Version: 1.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.7.0.pack
+                Keil.STM32F4xx_DFP.2.7.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_standard
+  D:\MDK\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  D:\MDK\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
+  D:\MDK\Arm\Packs\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: ARM::CMSIS:DSP:Library:1.6.0
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
